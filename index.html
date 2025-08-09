@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Site Similar ao Exemplo</title>
+<style>
+  /* Cores e variáveis iguais ao site enviado */
+  :root {
+    --cor-principal: #095474; /* azul escuro */
+    --cor-fundo: #ffffff; /* fundo branco */
+    --cor-texto: #222; /* texto escuro */
+    --cor-botao: #095474;
+    --cor-botao-hover: #064661;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+  }
+
+  /* Cabeçalho fixo */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 1000;
+  }
+
+  header img {
+    height: 50px; /* logo pequena e centralizada */
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #095474;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    color: #064661;
+  }
+
+  /* Espaçamento com padding no topo para não ficar escondido */
+  main {
+    padding-top: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px 50px 20px;
+  }
+
+  /* Seções de conteúdo */
+section {
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: var(--cor-principal);
+  margin-bottom: 10px;
+}
+
+section p {
+  line-height: 1.6;
+}
+
+/* Botões padrão */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--cor-botao);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--cor-botao-hover);
+}
+
+/* Vídeo embutido */
+.video-container {
+  margin-top: 20px;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Rodapé */
+footer {
+  background-color: #095474;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+footer a:hover {
+  color: #ddd;
+}
+
+/* Responsividade simples */
+@media(max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    margin-top: 10px;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <!-- Logo e menu -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Logo_Gov.br.svg" alt="Logo Gov.br" />
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Serviços</a>
+    <a href="#">Contato</a>
+  </nav>
+</header>
+
+<main>
+  <!-- Conteúdo principal -->
+  <section>
+    <h2>Olá, Seja Bem-vindo!</h2>
+    <p>Este é um site inspirado no modelo enviado
